@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nhw
+ labels:
+  app: hw
+spec:
+ containers:
+ - name: chw
+   image: sktsadhukha/test1
+   ports:
+   - containerPort: 3000
+   livenessProbe:
+    httpGet:
+     path: /
+     port: 3000
+    initialDelaySeconds: 15
+    timeoutSeconds: 30
