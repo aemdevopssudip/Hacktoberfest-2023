@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: hwrchc
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: hw
+ template:
+  metadata:
+   name: nhw
+   labels:
+    app: hw
+  spec:
+   containers:
+   - name: chw
+     image: sktsadhukha/test1
+     ports:
+     - containerPort: 3000
+     livenessProbe:
+      httpGet:
+       path: /
+       port: 3000
+      initialDelaySeconds: 15
+      timeoutSeconds: 30
