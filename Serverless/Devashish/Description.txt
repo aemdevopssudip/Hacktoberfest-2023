@@ -1,0 +1,1 @@
+Serverless Code for GreeMe Written in JS & can be executed on Lambda.
