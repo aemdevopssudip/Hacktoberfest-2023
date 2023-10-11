@@ -1,0 +1,1 @@
+Hi everyone !! In this repository I have written the terraform scripts to create vpc, subnets, security groups and RDS. Here you can understand the concept of terraform variables, terraform output, terraform modules and tfvars.
