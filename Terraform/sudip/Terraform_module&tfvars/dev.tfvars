@@ -1,6 +1,6 @@
 nameWithDate      = "sudip-test-dev"
 availability_zone = "ap-northeast-1"
-instance_type     = "t2.micro"
+instance_type     = "t2.small"
 
 vpc_environment_name = {
   "stage" = "dev-vpc",
